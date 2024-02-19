@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner obj = new Scanner(System.in);
+        System.out.print("Enter the starting number: ");
+        int start = obj.nextInt();
+        System.out.print("Enter the ending number: ");
+        int end = obj.nextInt();
+
+        for (int i = start; i <= end; i++) {
+            System.out.println(i);
+        }
+    }
+}
