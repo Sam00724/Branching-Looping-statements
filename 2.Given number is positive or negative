@@ -15,3 +15,7 @@ public class Main {
         }
     }
 }
+
+OUTPUT:
+Enter a number: 22
+The number is positive.
