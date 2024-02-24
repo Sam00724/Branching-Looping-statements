@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class DiscountCalculator {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the purchase amount: ");
+        double purchaseAmount = scanner.nextDouble();
+        double discount = 0.0;
+        if (purchaseAmount < 500) {
+            discount = 0.0;
+        } else if (purchaseAmount >= 500 && purchaseAmount <= 1000) {
+            discount = 0.10 * purchaseAmount;
+        } else if (purchaseAmount > 1000) {
+    
+            discount = 0.20 * purchaseAmount;
+        }
+        double amountAfterDiscount = purchaseAmount - discount;
+
+        System.out.println("Purchase Amount: $" + purchaseAmount);
+        System.out.println("Discount: $" + discount);
+        System.out.println("Amount After Discount: $" + amountAfterDiscount);
+        scanner.close();
+    }
+}
+
+
+OUTPUT:
+
+Enter the purchase amount: 650
+Purchase Amount: $650.0
+Discount: $65.0
+Amount After Discount: $585.0
